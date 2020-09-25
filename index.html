@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vue Experiments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- Since there is already a rich ecosystem of ajax libraries    -->
     <!-- and collections of general-purpose utility methods, Vue core -->
@@ -161,7 +162,52 @@
 
 <!--<hr>-->
 
+<!--<div id="app-18" class="static" v-bind:class="{ active: isActive, 'text-danger': hasError }">-->
+<!--    This is a text.-->
+<!--</div>-->
 
+<!--<hr>-->
+
+<!--<div id="app-19" v-bind:style="styleObject">-->
+<!--    Some text here.-->
+<!--</div>-->
+
+<!--<hr>-->
+
+<!--<div id="app-20">-->
+<!--    <h1 v-if="awesome">Vue is awesome!</h1>-->
+<!--    <h1 v-else>Oh no!</h1>-->
+<!--</div>-->
+
+<!--<hr>-->
+
+<!--<div id="app-21">-->
+<!--    <div v-if="type === 'A'">-->
+<!--        A-->
+<!--    </div>-->
+<!--    <div v-else-if="type === 'B'">-->
+<!--        B-->
+<!--    </div>-->
+<!--    <div v-else-if="type === 'C'">-->
+<!--        C-->
+<!--    </div>-->
+<!--    <div v-else>-->
+<!--        Not A/B/C-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr>-->
+
+<!--<div id="app-22">-->
+<!--    <div v-if="loginType === 'username'">-->
+<!--        <label>Username</label>-->
+<!--        <input placeholder="Enter your username">-->
+<!--    </div>-->
+<!--    <div v-else>-->
+<!--        <label>Email</label>-->
+<!--        <input placeholder="Enter your email address">-->
+<!--    </div>-->
+<!--</div>-->
 
 </body>
 
@@ -380,6 +426,45 @@
     //         }
     //     }
     // })
+    //
+    // let app18 = new Vue({
+    //     el: '#app-18',
+    //     data: {
+    //         isActive: false,
+    //         hasError: true
+    //     }
+    // });
+    //
+    // let app19 = new Vue({
+    //     el: '#app-19',
+    //     data: {
+    //         styleObject: {
+    //             color: 'red',
+    //             fontSize: '30px'
+    //         }
+    //     }
+    // });
+    //
+    // let app20 = new Vue({
+    //     el: '#app-20',
+    //     data: {
+    //         awesome: false
+    //     }
+    // });
+    //
+    // let app21 = new Vue({
+    //     el: '#app-21',
+    //     data: {
+    //         type: 'A'
+    //     }
+    // });
+    //
+    // let app22 = new Vue({
+    //     el: '#app-22',
+    //     data: {
+    //         loginType: 'username'
+    //     }
+    // });
 
 </script>
 
